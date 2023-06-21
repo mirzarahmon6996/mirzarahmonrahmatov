@@ -1,4 +1,5 @@
 "use strict";
+let anchors = document.querySelectorAll('a[href^="#"]');
 window.addEventListener('DOMContentLoaded', () => {
   /**
    * Easy selector helper function
@@ -240,3 +241,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 })
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const goto = anchor.hasAttribute("href")
+      ? anchor.getAttribute("href")
+      : "body";
+  });
+}
