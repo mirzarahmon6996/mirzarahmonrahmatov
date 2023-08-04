@@ -96,9 +96,9 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
-  border-bottom: 2px solid red;
+  color: red;
   padding-bottom: 6px;
+  font-weight: 900;
 }
 
 #header img {
@@ -862,7 +862,9 @@ section .container {
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
 }
-
+#id {
+  color: red;
+}
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);

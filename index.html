@@ -8,6 +8,7 @@
     <title>Mirzarahmon Rahmatov</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -33,7 +34,7 @@
 
             <h1><a href="/">Mirzarahmon Rahmatov</a></h1>
 
-            <h2> Front-End <span>Web Developer</span></h2>
+            <h2> Front-End <span id="type"></span></h2>
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -725,7 +726,29 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js "></script>
+<script>
+    let Data = new Typed('#type', {
+        strings: [
+            'Html',
+            'Css',
+            'Scss',
+            'Sass',
+            'Git',
+            'GitHub',
+            'Typed.Js',
+            'Javascript',
+            'React js',
+            'Next js',
+            'Redux',
+        ],
+        startSpeed:50,
+        typeSpeed: 50,
+        backDelay: 700,
+        backSpeed: 50,
+        loop: true
 
+    })
+</script>
 </body>
 
 </html>
